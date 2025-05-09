@@ -52,7 +52,7 @@ model = PipelineModel.load("/dbfs/path/to/my_lr_model")
 predictions = model.transform(test_data)
 ```
 
-3. To use the sabed pandas model:
+3. To use the saved pandas model:
 
 ```
 import joblib
@@ -60,4 +60,8 @@ model = joblib.load("/path/to/bert_logistic_regression.pkl")
 y_pred = model.predict(X_test)
 ```
 
+4. To use the saved DistilBERT embeddings:
 
+```
+
+```

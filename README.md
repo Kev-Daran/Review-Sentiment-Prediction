@@ -46,18 +46,18 @@ Provides contextual understanding but computationally intensive
 1. Clone this repo.
 2. To use the saved pipeline model:
 
-`
+```
 from pyspark.ml import PipelineModel
 model = PipelineModel.load("/dbfs/path/to/zipped_spark_model")
 predictions = model.transform(test_data)
-`
+```
 
 3. To use the sabed pandas model:
 
-`
+```
 import joblib
 model = joblib.load("models/distilbert_lr_model.pkl")
 y_pred = model.predict(X_test)
-`
+```
 
 

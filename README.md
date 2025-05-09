@@ -56,7 +56,7 @@ predictions = model.transform(test_data)
 
 ```
 import joblib
-model = joblib.load("models/bert_lr_model.pkl")
+model = joblib.load("/path/to/bert_logistic_regression.pkl")
 y_pred = model.predict(X_test)
 ```
 

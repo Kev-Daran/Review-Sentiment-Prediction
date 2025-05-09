@@ -4,5 +4,17 @@ This project explores the performance of both traditional NLP methods (TF-IDF + 
 
 ---
 
+# Recommended Environment
 
+This project was developed and tested on Databricks Runtime 13.3 LTS ML (Apache Spark 3.4, Scala 2.12).
+For best results and compatibility, it's strongly recommended to run this project in the same environment or equivalent PySpark setup with MLlib support.
 
+---
+
+# Datasets Used
+
+Rotten Tomatoes Movie Reviews
+~1.4M labeled reviews (positive/negative)
+
+Amazon Alexa Reviews
+3.1K reviews sampled for domain transfer evaluation

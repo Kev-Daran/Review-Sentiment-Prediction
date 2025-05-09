@@ -13,8 +13,31 @@ For best results and compatibility, it's strongly recommended to run this projec
 
 # Datasets Used
 
-Rotten Tomatoes Movie Reviews
+Rotten Tomatoes Movie Reviews:
+
 ~1.4M labeled reviews (positive/negative)
 
-Amazon Alexa Reviews
+
+Amazon Alexa Reviews:
+
 3.1K reviews sampled for domain transfer evaluation
+
+---
+
+# Models
+
+TF-IDF + Logistic Regression:
+
+Lightweight, efficient, works well with distributed data (PySpark)
+
+
+DistilBERT Embeddings + Logistic Regression:
+
+Provides contextual understanding but computationally intensive
+
+---
+
+# Reproducibility
+
+1. Clone this repository
+2. 

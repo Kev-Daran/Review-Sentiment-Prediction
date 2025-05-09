@@ -6,7 +6,11 @@ This project explores the performance of both traditional NLP methods (TF-IDF + 
 
 # Recommended Environment
 
-This project was developed and tested on Databricks Runtime 13.3 LTS ML (Apache Spark 3.4, Scala 2.12).
+This project was developed and tested on:
+1. Databricks Runtime 13.3 LTS ML (Apache Spark 3.4, Scala 2.12)
+2. Python 3.10+
+3. Transformers ≥ 4.37
+   
 For best results and compatibility, it's strongly recommended to run this project in the same environment or equivalent PySpark setup with MLlib support.
 
 ---
@@ -39,5 +43,22 @@ Provides contextual understanding but computationally intensive
 
 # Reproducibility
 
-1. Clone this repository
-2. 
+1. Clone this repo.
+2. To use the saved pipeline model:
+
+  ```
+   from pyspark.ml import PipelineModel
+  # Load from ZIP (Databricks/Spark environment)
+  model = PipelineModel.load("/dbfs/path/to/zipped_spark_model")
+  predictions = model.transform(test_data)
+  ```
+
+3. To use the sabed pandas model:
+
+   ```
+   import joblib
+   model = joblib.load("models/distilbert_lr_model.pkl")
+   y_pred = model.predict(X_test)
+  ```
+
+

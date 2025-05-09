@@ -21,10 +21,14 @@ Rotten Tomatoes Movie Reviews:
 
 ~1.4M labeled reviews (positive/negative)
 
+Link: https://www.kaggle.com/datasets/andrezaza/clapper-massive-rotten-tomatoes-movies-and-reviews/data
+
 
 Amazon Alexa Reviews:
 
 3.1K reviews sampled for domain transfer evaluation
+
+Link: https://www.kaggle.com/datasets/sid321axn/amazon-alexa-reviews/data
 
 ---
 

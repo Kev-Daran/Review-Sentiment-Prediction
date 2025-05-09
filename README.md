@@ -87,7 +87,7 @@ alexa_df = pd.read_csv("embeddings/alexa_bert_embeddings.csv")
 
 | Dataset         | Model                        | Accuracy | Precision | Recall | F1 Score |
 | --------------- | ---------------------------- | -------- | --------- | ------ | -------- |
-| Rotten Tomatoes | TF-IDF + Logistic Regression | 0.7995   | 0.8249    | 0.7995 | 0.7800   |
-| Rotten Tomatoes | BERT + Logistic Regression   | 0.8931   | 0.9028    | 0.8931 | 0.8910   |
-| Alexa Reviews   | TF-IDF + Logistic Regression | 0.7108   | 0.8835    | 0.7108 | 0.6632   |
-| Alexa Reviews   | BERT + Logistic Regression   | 0.8490   | 0.9723    | 0.8602 | 0.8540   |
+| Rotten Tomatoes | TF-IDF + Logistic Regression | 0.8499   | 0.8489    | 0.8499 | 0.8494   |
+| Rotten Tomatoes | BERT + Logistic Regression   | 0.8000   | 0.8285    | 0.8840 | 0.8553   |
+| Alexa Reviews   | TF-IDF + Logistic Regression | 0.7108   | 0.8835    | 0.7108 | 0.7877   |
+| Alexa Reviews   | BERT + Logistic Regression   | 0.8490   | 0.9723    | 0.8602 | 0.9127   |

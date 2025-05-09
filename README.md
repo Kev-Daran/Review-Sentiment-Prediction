@@ -48,7 +48,7 @@ Provides contextual understanding but computationally intensive
 
 ```
 from pyspark.ml import PipelineModel
-model = PipelineModel.load("/dbfs/path/to/zipped_spark_model")
+model = PipelineModel.load("/dbfs/path/to/my_lr_model")
 predictions = model.transform(test_data)
 ```
 
@@ -56,7 +56,7 @@ predictions = model.transform(test_data)
 
 ```
 import joblib
-model = joblib.load("models/distilbert_lr_model.pkl")
+model = joblib.load("models/bert_lr_model.pkl")
 y_pred = model.predict(X_test)
 ```
 

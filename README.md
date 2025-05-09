@@ -62,6 +62,18 @@ y_pred = model.predict(X_test)
 
 4. To use the saved DistilBERT embeddings:
 
+On BASH
+```
+unzip embeddings.zip -d embeddings/
 ```
 
+Load embeddings
+```
+import pandas as pd
+
+# Load Rotten Tomatoes BERT embeddings
+rotten_df = pd.read_csv("embeddings/final_bert_embeddings.csv")
+
+# Load Alexa BERT embeddings
+alexa_df = pd.read_csv("embeddings/alexa_bert_embeddings.csv")
 ```
